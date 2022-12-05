@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Counter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Counter</h1>
+      <div class="counter">
+        <button onclick="decrease()">-</button>
+        <h1 id="number"></h1>
+        <button onclick="increase()">+</button>
+      </div>
+      <p id="error">Error</p>
+    </div>
+  </body>
+
+  <script>
+    var number = document.getElementById('number');
+    number.innerText=0;
+    number.addEventListener("click", decrease=()=>{
+      number.innerText=parseInt(number.innerText)-1;
+    } )
+    number.addEventListener("click", increase=()=>{
+      number.innerText=parseInt(number.innerText)+1;
+    } )
+  
+
+   
+  </script>
+</html>
